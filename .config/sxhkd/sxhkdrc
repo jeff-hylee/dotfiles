@@ -18,6 +18,29 @@ super + d
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# wifi rofi menu
+super + F5
+	$HOME/.config/rofi/scripts/nmcli_rofi.sh
+
+# kill script
+super + shift + BackSpace
+	rofi -show Kill -modi Kill:$HOME/.config/rofi/scripts/kill.sh	
+
+# user session
+super + shift + q
+	rofi -show Power -modi Power:$HOME/.config/rofi/scripts/power-bspwm.sh
+
+# volue controls (using PulseAudio)
+{XF86AudioRaiseVolume,XF86AudioLowerVolume}
+	pactl set-sink-volume @DEFAULT_SINK@ {+,-}10%
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioMicMute
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+
 #
 # bspwm hotkeys
 #
