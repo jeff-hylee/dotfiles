@@ -1,0 +1,5 @@
+configuration {
+  theme: "~/.cache/wal/colors-rofi-dark.rasi";
+  font: "MesloLGS NF 10";
+  width: 30;
+}
