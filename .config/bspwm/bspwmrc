@@ -1,7 +1,8 @@
 #! /bin/sh
 
 sxhkd &
-nitrogen --restore
+$HOME/.config/polybar/scripts/launch.sh mainbar-bspwm
+picom &
 
 bspc monitor -d 1 2 3 4 5 
 

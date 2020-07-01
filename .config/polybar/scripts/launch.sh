@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
- 
+
+if test "$#" -ne 1; then
+    echo "Please specify polybar to be launched."
+    exit 1
+fi
+
 # Terminate already running bar instances
 killall -q polybar
  
@@ -11,10 +16,10 @@ sleep 2
 # Launch bar
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar --reload mainbar-i3 &
+    MONITOR=$m polybar --reload $1 &
   done
 else
-  polybar --reload mainbar-i3 &
+  polybar --reload $1 &
 fi
  
 echo "Bar launched"
