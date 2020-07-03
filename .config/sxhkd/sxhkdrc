@@ -40,6 +40,9 @@ XF86AudioMute
 XF86AudioMicMute
 	pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+# screen brightness control
+{XF86MonBrightnessUp,XF86MonBrightnessDown}
+	brightnessctl set 10%{+,-}
 
 #
 # bspwm hotkeys
