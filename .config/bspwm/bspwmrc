@@ -3,6 +3,7 @@
 sxhkd &
 $HOME/.config/polybar/scripts/launch.sh mainbar-bspwm
 picom &
+wal -R
 
 bspc monitor -d 1 2 3 4 5 
 
