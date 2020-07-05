@@ -44,6 +44,11 @@ XF86AudioMicMute
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
 	brightnessctl set 10%{+,-}
 
+# Lenovo launch (fun!)
+XF86Launch1
+	code
+
+
 #
 # bspwm hotkeys
 #
