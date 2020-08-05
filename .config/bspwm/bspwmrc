@@ -6,6 +6,7 @@ wal -R
 source "$HOME/.cache/wal/colors.sh"
 
 $HOME/.config/polybar/scripts/launch.sh mainbar-bspwm
+nabi &
 
 bspc monitor -d 1 2 3 4 5 
 
