@@ -38,3 +38,6 @@ vim.opt.shortmess:append("c")
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+
+vim.cmd('colorscheme jellybeans')
+
